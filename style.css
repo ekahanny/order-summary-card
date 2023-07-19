@@ -17,17 +17,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
-
-/* main{
-
-} */
 
 .card{
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 20px 40px 5px hsl(223, 73%, 87%);
     margin-bottom: 20px;
+    margin-top: 20px;
 
 }
 
@@ -131,4 +129,48 @@ button:hover{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 400px) {
+
+    body{
+        background: url(./images/pattern-background-mobile.svg);
+        background-color: hsl(225, 100%, 94%);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .card-img, .card-component{
+        width: inherit;
+    }
+
+    .card-img{
+        height: 171px;
+    }
+
+    .card-title{
+        text-align: center;
+    }
+
+    .card-subs{
+        width: 280px;
+        padding: 20px;
+    }
+
+    .change p{
+        margin-left: 15px;
+    }
+
+    .plan{
+    margin-right: 5px;
+    }
+
+    button{
+        width: 270px;
+    }
 }
